@@ -1,0 +1,117 @@
+
+*{
+  padding:0;
+  margin: 0;
+}
+.body{
+
+}
+#Home{
+  display: flex;
+  align-items: center;
+  color:black;
+  flex-direction: row;
+  padding: 30px;
+  margin: 40px;
+  margin-bottom: 150px;
+  
+}
+.heroinfo{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  align-items: flex-start;
+
+}
+img{
+width: 150px;
+padding:20px;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding:30px;
+  align-items: center;
+  margin:20px;
+}
+ul{
+  list-style-type: none;
+}
+ul li{
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer;
+  
+}
+
+li:hover{
+  background-color:red;
+  color: whitesmoke;
+  border-radius: 10px 0px;
+}
+
+#logo{
+ display: flex;
+ gap:20px;
+ align-items: center;
+}
+#logoimg{
+  width: 50px;
+  padding: 10px;
+  width:400px;
+  height: auto;
+  box-shadow: 10px 10px 10px grey;
+}
+button{
+
+  color: white;
+  background-color: red;
+  font-size: 20px;
+  padding: 10px;
+  width: 150px;
+}
+button:hover{
+  color: white;
+  background-color: black;
+
+}
+h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Mission{
+  padding: 100px;
+  background-color: black;
+  color: white;
+  margin: 60px;
+
+}
+.merchdiv{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+.merch{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:50px;
+  gap: 50px;
+
+}
+.merch img{
+  box-shadow: 5px 5px 10px gray;
+}
+b{
+  color: red;
+  padding: 10px;
+}
+.merchdiv{
+  padding:10px;
+  gap:20px;
+}
+.merchdiv button{
+  width: 75px;
+  font-size: 10px;
+}
