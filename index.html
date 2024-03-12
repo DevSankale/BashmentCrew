@@ -1,52 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>BashmentCrew.</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+
+  <header>
   <div class="nav">
     <div id="logo">
       <img src="/images/logo-spV2NEFzn-transformed.png">
-     
+
     </div>
-  
-    <ul>
-      <li><a href="#Home"></a>Home</li>
-      <li><a href="#About"></a>About</li>
-      <li><a href="#Mixes"></a>Mixes</li>
-      <li><a href="#Contacts"></a>Contacts</li>
-    </ul>
+    <div class="links">
+      <ul>
+        <li><a href="#Home"></a>Home</li>
+        <li><a href="#About"></a>About</li>
+        <li><a href="#Mixes"></a>Mixes</li>
+        <li><a href="#Contacts"></a>Contacts</li>
+        <li><a href="#Contacts"></a>Cart</li>
+
+
+      </ul>
+    </div>
   </div>
-  <div id="Home">
+  <div class="Home">
     <div class="heroinfo">
-      <h1>Bashment<b>Crew.</b></h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, voluptatum nisi vero harum, excepturi repudiandae atque, in alias modi nostrum aperiam non ipsam minima quod officia provident rem fuga molestias.</p>
-      <button>JOIN</button>
+      <h1>Bashment<i>Crew.</i></h1>
+      <p>A group comprising of multi-talented individuals who aspire to bring change and motivate the community through the use of music,creativity and art,while at the same time generating revenue to empower themselves as well as the community at large.</p>
+      <button>JOIN.</button>
     </div>
-    <img id ="logoimg" src="/images/img2.jpg">
+    <img id="logoimg" src="/images/img2.jpg">
+  </div>
+</header>
+
+
+  <div class="Mission">
+   Our main objective is to give our audience a one stop shop for everything entertainment.Through our capable and multi-talented djs we ensure constant and steady supply of good music mixes (both Audio and Video)to keep you entertained through out.
+   We also hold and organize events both private and those that are open to the entire public.We are well equipped from speakers,stands,tents,dj equipment and also chairs.Thus ensuring that your event is a success from the word go.
 
   </div>
-  <div class="Mission">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, hic quasi sit labore laboriosam exercitationem magni saepe nesciunt, dignissimos enim iure? Optio illum laudantium itaque porro dignissimos maxime minus ad?
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rem est iure atque, itaque in modi consectetur magnam? Error eum hic eius aperiam voluptates beatae eveniet ipsum optio maiores voluptatibus.
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque et fugit qui hic laborum quibusdam? Amet non libero vitae quos eveniet dignissimos fugiat, at ratione doloremque blanditiis neque officia vero.
-  </div>
-  <div class="merchdiv">
-    <p>Order Now:</p>
-    <div class="merch">
-    <div class="merchdiv"><img src="/images/285632539_748259956345307_39158008234513840_n.jpg"><button>Add to cart</button></div>  
-    <div class="merchdiv"><img src="/images/285525356_380144283934070_867115577592320761_n.jpg"><button>Add to cart</button></div>
-    <div class="merchdiv"><img src="/images/285367133_135733545592323_4297579889631087300_n.jpg"><button>Add to cart</button></div>
-   <div class="merchdiv"> <img src="/images/285672459_1841357396069618_2288405835255386728_n.jpg"><button>Add to cart</button></div>
-  
+  <div class="merchContainer">
+    <p id="orders">Order Now:</p>
+
+    <div class="merchdiv">
+      <img src="/images/285632539_748259956345307_39158008234513840_n.jpg" class="merchimg">
+      <div class="button-container">
+        <button onclick="
+        
+        calculation = calculation + 1;
+        console.log(`CartQuantity : ${calculation}`);
+        
+        ">Add to cart</button>
+        <button onclick="
+        
+        calculation = calculation - 1;
+        console.log(`CartQuantity: ${calculation}`);
+
+        ">Remove</button>
+      </div>
     </div>
+    <div class="merchdiv">
+      <div class="button-container">
+        <button onclick="
+        
+        calculation = calculation + 1;
+        console.log(`CartQuantity : ${calculation}`);
+        
+        ">Add to cart</button>
+        <button onclick="
+        
+        calculation = calculation - 1;
+        console.log(`CartQuantity : ${calculation}`);
+        
+        ">Remove</button>
+      </div>
+      <img src="/images/285525356_380144283934070_867115577592320761_n.jpg" class="merchimg">
+
+    </div>
+    <div class="merchdiv">
+
+      <img src="/images/285367133_135733545592323_4297579889631087300_n.jpg" class="merchimg">
+      <div class="button-container">
+        <button onclick="
+        
+        calculation = calculation + 1;
+        console.log(`CartQuantity : ${calculation}`);
+        
+        ">Add to cart</button>
+        <button onclick="
+        
+        calculation = calculation - 1;
+        console.log(`CartQuantity : ${calculation}`);
+        
+        ">Remove</button>
+      </div>
+    </div>
+    <div class="merchdiv">
+      <div class="button-container">
+        <button onclick="
+        
+        calculation = calculation + 1;
+        console.log(`CartQuantity : ${calculation}`);
+        
+        ">Add to cart</button>
+        <button onclick="
+        
+        calculation = calculation - 1;
+        console.log(`CartQuantity : ${calculation}`);
+        
+        ">Remove</button>
+      </div>
+      <img src="/images/285672459_1841357396069618_2288405835255386728_n.jpg" class="merchimg">
+
+    </div>
+
+
   </div>
-  <div class="clients"></div>
-  <div class="form"></div>
-  <div class="footer"></div>
-  
+  <div class="clients">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reiciendis ipsa, quis atque magni dicta?
+      Culpa maiores, vitae sunt, quos officiis quasi aliquid inventore beatae, asperiores nam quae hic recusandae?Lorem
+      ipsum dolor sit amet consecteturadipisicing elit. Consectetur quas est assumenda veniam! Pariatur sint nostrum
+      harum maiores voluptatibus excepturi dolores unde voluptatum ullam ad, officiis, earum iure, laboriosam soluta?
+
+    </p>
+
+
+
+
+  </div>
+
+
+  <form class="form">
+    <label>Name</label>
+    <input type="text" for="name">
+    <label>Email</label>
+    <input type="Email" for="email">
+    <textarea placeholder="Message us."></textarea>
+    <button>Submit</button>
+  </form>
+
+  <div class="footer">
+    &copy;Bashment<i>Crew.</i>
+    <h6>SankaleDev</h6>
+  </div>
+  <script>
+    let calculation = 0;
+  </script>
 </body>
+
 </html>

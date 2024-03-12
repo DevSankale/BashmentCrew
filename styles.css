@@ -1,69 +1,76 @@
-
-*{
-  padding:0;
+* {
+  padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 }
-.body{
 
-}
-#Home{
+.Home {
   display: flex;
   align-items: center;
-  color:black;
-  flex-direction: row;
+  color: black;
   padding: 30px;
-  margin: 40px;
-  margin-bottom: 150px;
-  
+ 
 }
-.heroinfo{
-  padding: 30px;
+
+.heroinfo {
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap:15px;
+  gap: 15px;
   align-items: flex-start;
 
 }
-img{
-width: 150px;
-padding:20px;
-}
-.nav{
-  display: flex;
-  justify-content: space-between;
-  padding:30px;
-  align-items: center;
-  margin:20px;
-}
-ul{
-  list-style-type: none;
-}
-ul li{
-  display: inline-block;
+
+img {
+  width:50%;
   padding: 20px;
-  cursor: pointer;
-  
 }
 
-li:hover{
-  background-color:red;
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+.links{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 13px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+li:hover {
+  background-color: red;
   color: whitesmoke;
   border-radius: 10px 0px;
 }
 
-#logo{
- display: flex;
- gap:20px;
- align-items: center;
+#logo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
-#logoimg{
-  width: 50px;
+
+#logoimg {
+  
   padding: 10px;
-  width:400px;
-  height: auto;
-  box-shadow: 10px 10px 10px grey;
+  width:45%;
+  box-shadow: 7px 7px 7px gray;
 }
-button{
+
+button {
 
   color: white;
   background-color: red;
@@ -71,47 +78,107 @@ button{
   padding: 10px;
   width: 150px;
 }
-button:hover{
+
+button:hover {
   color: white;
   background-color: black;
 
 }
-h1{
+
+h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.Mission{
+
+.Mission {
   padding: 100px;
   background-color: black;
   color: white;
   margin: 60px;
 
 }
-.merchdiv{
+
+.merchdiv {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  padding: 50px;
+  padding: 100px;
+  margin: 100px;
+  justify-content: space-evenly;
+
 }
-.merch{
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.merchimg {
+  width: 50px;
+  padding: 10px;
+  width: 300px;
+  height: auto;
+  box-shadow: 10px 10px 10px grey;
+}
+
+#orders {
+  text-align: center;
+}
+
+.merch {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding:50px;
+  padding: 50px;
   gap: 50px;
 
 }
-.merch img{
+
+.merch img {
   box-shadow: 5px 5px 10px gray;
 }
-b{
+
+b {
   color: red;
   padding: 10px;
+
 }
-.merchdiv{
-  padding:10px;
-  gap:20px;
+
+.merchdiv {
+  padding: 10px;
+  gap: 20px;
 }
-.merchdiv button{
+
+.merchdiv button {
   width: 75px;
   font-size: 10px;
+}
+
+.clients {
+  padding: 100px;
+  background-color: black;
+  color: white;
+  margin: 60px;
+}
+
+.form {
+
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 200;
+  padding: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 6px;
+}
+
+.footer {
+
+  color: black;
+  text-align: center;
+  padding: 60px;
+
+}
+
+i {
+  color: red;
 }
