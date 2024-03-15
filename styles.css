@@ -30,7 +30,7 @@ img {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content:space-around;
   padding: 5px;
 }
 .links{
@@ -42,12 +42,15 @@ font-size: 13px;
 
 ul {
   list-style-type: none;
+ 
 }
 
-ul li {
+li  {
   display: inline-block;
   padding: 10px;
   cursor: pointer;
+  text-decoration: none;
+
 
 }
 
@@ -56,6 +59,14 @@ li:hover {
   color: whitesmoke;
   border-radius: 10px 0px;
 }
+
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+}
+
+
 
 #logo {
   display: flex;
@@ -89,6 +100,15 @@ h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+#cartimage{
+  height: 20px;
+  width:20px;
+}
+#cartimage:hover{
+  background-color: red;
+  border-radius: 30px 30px;
+  color: white;
+}
 .Mission {
   padding: 100px;
   background-color: black;
@@ -164,11 +184,13 @@ b {
 
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 200;
-  padding: 200px;
+  padding: 100px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   gap: 6px;
+  border: 2px solid gray;
 }
 
 .footer {
