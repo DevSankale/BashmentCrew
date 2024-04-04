@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BashmentCrew.</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -81,6 +81,14 @@
       <img src="/images/285672459_1841357396069618_2288405835255386728_n.jpg" class="merchimg">
 
     </div>
+    <div class="merchdiv">
+      <img src="/images/285894833_762375701422613_3010922304766899613_n.jpg" class="merchimg">
+      <div class="button-container">
+        <button class="add-button js-add-button">Add to cart</button>
+        <button class="remove-button js-remove-button">Remove</button>
+      </div>
+
+    </div>
 
 
   </div>
@@ -104,16 +112,17 @@
     <label>Email</label>
     <input type="Email" for="email">
     <textarea placeholder="Message us."></textarea>
-    <button>Submit</button>
+    <button class="submit-button 
+    js-submit-button">Submit</button>
   </form>
 
   <div class="footer">
     &copy;Bashment<i>Crew.</i>
     <h6>SankaleDev</h6>
   </div>
-  <script src="./scripts/index.js">
-    
+  <script type="module" src="scripts/index.js">
   </script>
+  
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+
 const joinbtn = document.querySelector('.js-join-button');
  
 joinbtn.addEventListener('click',()=>{
@@ -18,6 +19,5 @@ const removebtn = document.querySelectorAll('.js-remove-button');
 removebtn.addEventListener('click',()=>{
   console.log('removed');
 })
- })
+ });
 
- 
