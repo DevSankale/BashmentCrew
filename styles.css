@@ -5,13 +5,16 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 }
 
+
 .Home {
   display: flex;
   align-items: center;
   color: black;
   padding: 30px;
- 
+  padding-top: 200px;
+  padding-bottom: 80px;
 }
+
 
 .heroinfo {
   padding: 20px;
@@ -19,20 +22,29 @@
   flex-direction: column;
   gap: 15px;
   align-items: flex-start;
-
 }
+
 
 img {
   width:50%;
-  padding: 20px;
+  padding: 10px;
 }
+
+
 
 .nav {
   display: flex;
   align-items: center;
   justify-content:space-around;
-  padding: 5px;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+background-color: white;
 }
+
+
 .links{
 display: flex;
 align-items: center;
@@ -40,82 +52,98 @@ justify-content: center;
 font-size: 13px;
 }
 
+
+
+
+
 ul {
   list-style-type: none;
- 
 }
 
-li  {
+
+
+li a {
   display: inline-block;
-  padding: 10px;
+  padding:8px;
   cursor: pointer;
-  text-decoration: none;
-
-
-}
-
-li:hover {
-  background-color: red;
-  color: whitesmoke;
+  transition: 0.2s background-color;
   border-radius: 10px 0px;
-}
-
-a{
   text-decoration: none;
-  color: black;
+  color:black;
   font-size: 13px;
 }
 
 
 
-#logo {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-#logoimg {
-  
-  padding: 10px;
-  width:45%;
-  box-shadow: 7px 7px 7px gray;
-}
-
-button {
-
+li a:hover {
+  background-color: red;
+  border-radius: 10px 0px;
+  text-decoration: none;
   color: white;
+
+
+}
+
+#logo {
+ width: 20%;
+ align-items: center;
+}
+
+
+.logo-image{
+  border-radius: 50%;
+ box-shadow: 1px 1px 1px grey;
+}
+
+.join-button {
+  color:white;
   background-color: red;
   font-size: 20px;
   padding: 10px;
   width: 150px;
+  border: none;
+  transition: 0.5s background-color , 0.5s color;
 }
 
-button:hover {
-  color: white;
+
+
+.join-button:hover {
+  color:red;
   background-color: black;
-
 }
+
+
 
 h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
+
 #cartimage{
-  height: 20px;
-  width:20px;
+  height: 17px;
+  width:17px;
 }
+
+
+
 #cartimage:hover{
   background-color: red;
-  border-radius: 30px 30px;
+  border-radius: 10px 0px;
   color: white;
 }
+
+
+
 .Mission {
   padding: 100px;
   background-color: black;
   color: white;
-  margin: 60px;
+  margin: 100px;
 
 }
+
+
 
 .merchdiv {
   display: flex;
@@ -123,14 +151,17 @@ h1 {
   padding: 100px;
   margin: 100px;
   justify-content: space-evenly;
-
 }
+
+
 
 .button-container {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
+
+
 
 .merchimg {
   width: 50px;
@@ -140,9 +171,13 @@ h1 {
   box-shadow: 10px 10px 10px grey;
 }
 
+
+
 #orders {
   text-align: center;
 }
+
+
 
 .merch {
   display: flex;
@@ -150,28 +185,36 @@ h1 {
   justify-content: center;
   padding: 50px;
   gap: 50px;
-
 }
+
+
 
 .merch img {
   box-shadow: 5px 5px 10px gray;
 }
 
+
+
 b {
   color: red;
   padding: 10px;
-
 }
+
+
 
 .merchdiv {
   padding: 10px;
   gap: 20px;
 }
 
+
+
 .merchdiv button {
   width: 75px;
   font-size: 10px;
 }
+
+
 
 .clients {
   padding: 100px;
@@ -180,8 +223,9 @@ b {
   margin: 60px;
 }
 
-.form {
 
+
+.form {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 200;
   padding: 100px;
@@ -193,14 +237,18 @@ b {
   border: 2px solid gray;
 }
 
-.footer {
 
+.footer {
   color: black;
   text-align: center;
   padding: 60px;
-
 }
+
 
 i {
   color: red;
+}
+
+button{
+  cursor: pointer;
 }
