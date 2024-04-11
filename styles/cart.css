@@ -1,0 +1,47 @@
+body{
+  padding: 20px;
+}
+
+.Bashment-logo{
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+}
+
+.logo{
+  
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px grey;
+
+}
+
+.main{
+  padding-top: 80px;
+}
+
+.cart-grid{
+display: grid;
+grid-template-columns: 1fr 350px;
+column-gap: 12px;
+background-color: grey;
+align-items: start;
+}
+@media (max-width: 1000px) {
+  .main {
+    max-width: 500px;
+  }
+
+  .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cart-item-container,
+.payment-summary {
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 4px;
+  padding: 18px;
+}

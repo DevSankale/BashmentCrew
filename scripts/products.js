@@ -1,5 +1,9 @@
+
+
+
 function getProduct(){
   let matchingProduct='';
+
 products.forEach((product)=>{
   if(product.id===productId){
     matchingProduct = product;
@@ -11,7 +15,7 @@ return matchingProduct;
 
 
 
-  const products = [
+  export const products = [
 
   {
     id:'yellow-hoodie',
@@ -41,7 +45,7 @@ return matchingProduct;
     id:'blue-hoodie',
     color:'blue',
     image:"/images/285894833_762375701422613_3010922304766899613_n.jpg",
-    pricecents:250000
+    priceCents:250000
   }
 ];
 
