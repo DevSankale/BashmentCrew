@@ -1,7 +1,5 @@
 
-
-
-function getProduct(){
+export function getProduct(productId){
   let matchingProduct='';
 
 products.forEach((product)=>{
@@ -11,9 +9,6 @@ products.forEach((product)=>{
 });
 return matchingProduct;
  };
-
-
-
 
   export const products = [
 
@@ -50,4 +45,3 @@ return matchingProduct;
 ];
 
 
-console.log(products);

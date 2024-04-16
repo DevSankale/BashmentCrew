@@ -5,7 +5,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 }
 
-
 .Home {
   display: flex;
   align-items: center;
@@ -15,7 +14,6 @@
   padding-bottom: 80px;
 }
 
-
 .heroinfo {
   padding: 20px;
   display: flex;
@@ -24,13 +22,10 @@
   align-items: flex-start;
 }
 
-
 img {
   width:50%;
   padding: 10px;
 }
-
-
 
 .nav {
   display: flex;
@@ -44,7 +39,6 @@ img {
 background-color: white;
 }
 
-
 .links{
 display: flex;
 align-items: center;
@@ -52,15 +46,9 @@ justify-content: center;
 font-size: 13px;
 }
 
-
-
-
-
 ul {
   list-style-type: none;
 }
-
-
 
 li a {
   display: inline-block;
@@ -73,22 +61,17 @@ li a {
   font-size: 13px;
 }
 
-
-
 li a:hover {
   background-color: red;
   border-radius: 10px 0px;
   text-decoration: none;
   color: white;
-
-
 }
 
 #logo {
  width: 20%;
  align-items: center;
 }
-
 
 .logo-image{
   border-radius: 50%;
@@ -105,27 +88,19 @@ li a:hover {
   transition: 0.5s background-color , 0.5s color;
 }
 
-
-
 .join-button:hover {
   color:red;
   background-color: black;
 }
 
-
-
 h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-
 
 #cartimage{
   height: 17px;
   width:17px;
 }
-
-
 
 #cartimage:hover{
   background-color: red;
@@ -133,27 +108,19 @@ h1 {
   color: white;
 }
 
-
-
 .Mission {
   padding: 100px;
   background-color: black;
   color: white;
   margin: 100px;
-
 }
-
-
 
 .merchdiv {
   display: flex;
   align-items: center;
-  padding: 100px;
-  margin: 100px;
-  justify-content: space-evenly;
+  justify-content: center;
+  padding: 20px;
 }
-
-
 
 .button-container {
   display: flex;
@@ -161,63 +128,47 @@ h1 {
   gap: 5px;
 }
 
-
-
 .merchimg {
   width: 50px;
   padding: 10px;
   width: 300px;
   height: auto;
-  box-shadow: 10px 10px 10px grey;
+  box-shadow: 5px 5px 10px grey;
 }
-
-
 
 #orders {
   text-align: center;
 }
 
-
-
 .merchContainer {
-display:grid;
-grid-template-columns: 8,1fr;
-}
-@media (max-width: 2000px) {
-  .products-grid {
-    grid-template-columns: repeat(7, 1fr);
-  }
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 50px;
+margin: 50px;
 }
 
-
-
-
-.merch img {
-  box-shadow: 5px 5px 10px gray;
+.merchdiv {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  transition: 0.5s background-color;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-
+.merchdiv:hover{
+  background-color: lightgray;
+}
 
 b {
   color: red;
   padding: 10px;
 }
 
-
-
-.merchdiv {
-  padding: 10px;
-  gap: 20px;
-}
-
-
-
 .merchdiv button {
   width: 75px;
   font-size: 10px;
 }
-
-
 
 .clients {
   padding: 100px;
@@ -236,7 +187,6 @@ b {
   color: red;
 }
 
-
 .form {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 200;
@@ -248,13 +198,11 @@ b {
   border: 2px solid gray;
 }
 
-
 .footer {
   color: black;
   text-align: center;
   padding: 60px;
 }
-
 
 i {
   color: red;

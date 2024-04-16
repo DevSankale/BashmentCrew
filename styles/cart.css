@@ -22,22 +22,6 @@ body{
   padding-top: 80px;
 }
 
-.cart-grid{
-display: grid;
-grid-template-columns: 1fr 350px;
-column-gap: 12px;
-background-color: grey;
-align-items: start;
-}
-@media (max-width: 1000px) {
-  .main {
-    max-width: 500px;
-  }
-
-  .checkout-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 .cart-item-container,
 .payment-summary {
