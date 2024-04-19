@@ -151,13 +151,13 @@ margin: 50px;
 .merchdiv {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  transition: 0.5s background-color;
+  transition: 0.25s background-color;
   padding: 20px;
   border-radius: 10px;
 }
 
 .merchdiv:hover{
-  background-color: lightgray;
+  background-color: grey;
 }
 
 b {

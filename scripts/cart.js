@@ -1,5 +1,7 @@
 export let cart;
+
 loadFromStorage();
+
 function loadFromStorage(){
   cart = JSON.parse(localStorage.getItem('cart'));
   if(!cart){
@@ -9,11 +11,11 @@ function loadFromStorage(){
         color:'yellow',
         image:"/images/285632539_748259956345307_39158008234513840_n.jpg",
         priceCents:250000
-      }]
-  }
-}
+      }];
+  };
+};
 
-function saveToCart(){
+function saveToStorage(){
   localStorage.setItem('cart',JSON.stringify(cart));
 }
 
@@ -33,6 +35,17 @@ export function addToCart(productId){
       quantity:1,
     })
   }
-saveToCart();
+saveToStorage();
 }
 
+export function removeFromCart(){
+
+  let newCart=[];
+  cart.forEach((cartitem)=>{
+     if(cartitem.productId !== productId){
+      newCart.push(cartitem);
+     }
+  });
+  cart=newCart;
+  saveToStorage();
+}
