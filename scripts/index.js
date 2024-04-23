@@ -14,7 +14,9 @@ products.forEach((product)=>{
       <button class="add-button js-add-button" data-product-id="${product.id}">Add to cart</button>
       <button class="remove-button js-remove-button">Remove</button>
     </div>
- </div>`
+ </div>
+
+ `
 });
 
 
@@ -25,10 +27,11 @@ productsHTML;
 
 function updateCartQuantity(){
   let cartQuantity = 0;
+  if(cart){
   cart.forEach((cartitem)=>{
-    cartQuantity += cartitem.quantity;
+    cartQuantity += cartitem.quantity || 0;
   });
-
+  }
   document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
  
 };

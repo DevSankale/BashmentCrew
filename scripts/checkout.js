@@ -1,4 +1,7 @@
-import { getProduct } from "./products";
+import { getProduct,products } from "./products";
+import { cart } from "./cart";
+import formatCurrency from "../utils/money";
+
 
 function renderOrderSummary(){
 
@@ -11,9 +14,6 @@ function renderOrderSummary(){
   cartSummary +=
   
   `<div class="cart-item-container js-cart-item-container-${matchingProduct.id}">
-  <div class="delivery-date">
-    Delivery date:${dateString}
-  </div>
   
   <div class="cart-item-details-grid">
     <img class="product-image" src="${matchingProduct.image}">
@@ -43,3 +43,4 @@ function renderOrderSummary(){
 
 document.querySelector('.js-order-summary').innerHTML= cartSummary;
 renderOrderSummary();
+console.log(cartSummary);
