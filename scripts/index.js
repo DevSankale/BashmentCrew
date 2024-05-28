@@ -47,3 +47,4 @@ addbtn.addEventListener('click',()=>{
 });
 
 
+const getValue = document.getElementById('name').value;
